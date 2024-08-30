@@ -1,0 +1,29 @@
+{
+  "name": "employee-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "migrate": "mysql -u george -p!Demopass employees_db < ./db/schema.sql",
+    "seed": "mysql -u george -p!Demopass employees_db < ./db/seeds.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craig5117/employee-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Craig5117/employee-manager/issues"
+  },
+  "homepage": "https://github.com/Craig5117/employee-manager#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
+    "mysql2": "^2.2.5"
+  }
+}
